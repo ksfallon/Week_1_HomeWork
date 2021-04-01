@@ -103,6 +103,9 @@ h3 {
     text-align: center;
 }
 
+/* the last section of the webpage was designated by <div class="footer"> and the element was
+just changed to <footer>. In CSS all that needed to be changed was to have the period removed
+that designated the footer as a class because it is now an element. */
 footer {
     padding: 30px;
     clear: both;
@@ -110,6 +113,8 @@ footer {
     text-align: center; 
  }
  
+ /* This h2 is unqiue and so it should have the footer element before it, to designate the
+ location on the website */
  footer h2 {
      font-size: 20px;
  }
