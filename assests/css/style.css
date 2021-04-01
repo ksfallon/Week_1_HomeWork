@@ -61,12 +61,24 @@ a {
 /* the p selector was removed because the font-size: 16px was added to the
 body selector */
 
+/* the CSS is now organized by type of Selectors. 1st Elements, 2nd class 3rd ID. 
+the .hero, .float-right and .float-left classes are now below the element selectors. */
+
+/*Our next section of the website is below the navigation bar/main picture and
+on the left side of the webpage. In HTML the <div class="content"> is now <main> to
+designate the main portion of the website. */
 main {
     width: 75%;
     display: inline-block;
     margin-left: 25px;
 }
 
+/* within the main element, the 3 div's that created three sections with unquie class
+names were changed to the element <section>, all given the same class 
+<section class="link-info"> and their unquie ids were not changed. 
+Each section has the same CSS perameters for <h2> so those were also consolidated into one 
+CSS selector. The h2 needs section designated before it in CSS (section h2) so there
+is no confusion with the <h2> used in the footer of the wesbite.  */
 section h2 {
     margin-bottom: 20px;
     font-size: 36px;
