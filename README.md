@@ -21,4 +21,5 @@ very similar to the <main></main> the <aside></aside> has redundant "class" tags
 I renamed all of the divs to <section></section> again to show the 3 sections of the aside with their individual images, text and titles. Each section has the same class of "side-info" which was then put into CSS and took the old "benefit.___" class which were 3 different names with all the same CSS and reduced it to one ".side-info" selector.
 Samething with the headers, there were 3 different "h3" selectors put in with the same information so I shortened it to just h3 and it applied to all "h3"s used.
 same thing with the images reduced it from 3 selectors to 1, because i'd already give all of their selectors the same class so ".info-side img" worked for all of them.
-footer.
+For the footer I didn't feel the need to change much too much, just mainly the semantics.
+the <div class="footer"> just became <footer>. The CSS changed from ".footer" to "footer. the header just changed from ".footer h2" to "footer h2"
