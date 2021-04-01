@@ -4,12 +4,18 @@
     margin: 0;
 }
 
+/* The font-size and font-family were added here because they are used
+on the majority of the website unless otherwise specified by the element,
+class or id selector */
 body {
     background-color: #d9dcd6;
     font-size: 16px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/* In HTML <div class"header"> was replaced with <header> to establish the webiste header are that
+inludes the <h1> title element and the navigation bar. No longer needed the ".header" for the selector, 
+the header element can be used instead  */
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -17,11 +23,14 @@ header {
     color: #ffffff;
 }
 
+/* the h1 is unique and no longer needs .header infront of it */
 h1 {
     display: inline-block;
     font-size: 48px;
 }
 
+/* In HTML <div> was replaced with <nav> to designate this portion of the header code
+in the webpage's navigation bar*/
 nav {
     padding-top: 15px;
     margin-right: 20px;
