@@ -23,3 +23,4 @@ Samething with the headers, there were 3 different "h3" selectors put in with th
 same thing with the images reduced it from 3 selectors to 1, because i'd already give all of their selectors the same class so ".info-side img" worked for all of them.
 For the footer I didn't feel the need to change much too much, just mainly the semantics.
 the <div class="footer"> just became <footer>. The CSS changed from ".footer" to "footer. the header just changed from ".footer h2" to "footer h2"
+I removed the additional files that might have confused the website link from git hub.
