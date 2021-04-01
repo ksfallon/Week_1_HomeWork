@@ -84,6 +84,9 @@ section h2 {
     font-size: 36px;
 }
 
+/* The portion of the website that is located on the right hand side was changed from 
+<div class="benefits"> to <aside> and the class was removed.
+the font-family: information was removed because it is now located in the body selector. */
 aside {
     margin-right: 20px;
     padding: 20px;
@@ -93,7 +96,8 @@ aside {
     height: 100%;
     background-color: #2589bd;   
 }
-
+/* the <h3> elements within each section of the aside block were given unique selector names
+but all shared the same code. They are now all combined into the one CSS selector 'h3' */
 h3 {
     margin-bottom: 10px;
     text-align: center;
