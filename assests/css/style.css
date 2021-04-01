@@ -38,19 +38,28 @@ nav {
     font-size: 20px;
 }
 
-ul {
-    list-style-type: none;
-}
+/* the ul in the nav is unique and only the element selector is needed */
+/* ul {
+    list-style-type: none; 
+} */
 
+/* the il in the nav is unique and only the element selector is needed. The
+list-style-type:none in ul will still work if it is removed from ul and  added 
+to the li selector. */
 li {
+    list-style-type: none;
     display: inline-block;
     margin-left: 25px;
 }
 
+/* the anchor has unique color and text-decoration that shouldn't be altered */
 a {
     color: #ffffff;
     text-decoration: none;
 }
+
+/* the p selector was removed because the font-size: 16px was added to the
+body selector */
 
 main {
     width: 75%;
