@@ -1,3 +1,4 @@
+/* no changes necessary */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -118,7 +119,8 @@ footer {
  footer h2 {
      font-size: 20px;
  }
-
+/* nothing was altered here other than location in CSS. In the HTML the <div> became <figure> 
+but the class designation of hero stayed the same*/
 .hero {
     height: 800px;
     width: 100%;
@@ -128,27 +130,25 @@ footer {
     background-position: center;
 }
 
+/* the float left is in the <main> block. 
+There were originally two .float-left with the same code, so they were combined into a 
+single .float-left */
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
+/* the float left is in the <main> block of the website. */
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
-.side-info {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.side-info img{
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
+/* the .link-info is in the <main> block. 
+There are 3 sections within the <main> block that all have unique
+class names but the CSS code for all 3 is the same. The element was changed from 
+<div> to <section> and the classes were all changed to <section class=".link-info"
+In CSS now the 3 unique class names can all be consoladated into 1 selector.*/
 .link-info{
     margin-bottom: 20px;
     padding: 50px;
@@ -157,10 +157,40 @@ footer {
     color: #ffffff;
 }
 
+/* the .link-info img is in the <main> block.  
+With the 3 sections of the main block there are 3 img that all have the same CSS but
+again had to be written seperately into CSS because their section class names were
+unique. Now that all of the section class names are ".link-info" a single CSS selector of
+".link-info img" can be used with the original CSS code. */
 .link-info img{
 max-height: 200px;
 }
 
+/* the .side-info class is located in the <aside> block 
+all 3 of the sections within the <aside> block all had unique
+class names but contained the same CSS code. They have been
+consolidated into one .side-info selector with the same code.*/
+.side-info {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+/* the .side-info img designation is located in the <aside> block.
+All of the img CSS for this section also had unique class names but
+contained the same CSS code. Because the sections now all have the same 
+class designation, img is added (.side-info img) with the original CSS code."
+/* ".side-info" */
+.side-info img{
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+/* #seo is located in the <header> block.
+Because the change of color for this portion of <h1> was unique to the rest of
+the html and CSS I went from a class to an id that is why it is now designated
+with a # and is at the bottom of our list because it is the only id that required
+CSS coding. */
 #seo {
     color: #d9dcd6;
 }
