@@ -40,9 +40,9 @@ nav {
 }
 
 /* the ul in the nav is unique and only the element selector is needed */
-/* ul {
+ul {
     list-style-type: none; 
-} */
+}
 
 /* the il in the nav is unique and only the element selector is needed. The
 list-style-type:none in ul will still work if it is removed from ul and  added 
@@ -149,7 +149,7 @@ There are 3 sections within the <main> block that all have unique
 class names but the CSS code for all 3 is the same. The element was changed from 
 <div> to <section> and the classes were all changed to <section class=".link-info"
 In CSS now the 3 unique class names can all be consoladated into 1 selector.*/
-.link-info{
+.main-info{
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -162,7 +162,7 @@ With the 3 sections of the main block there are 3 img that all have the same CSS
 again had to be written seperately into CSS because their section class names were
 unique. Now that all of the section class names are ".link-info" a single CSS selector of
 ".link-info img" can be used with the original CSS code. */
-.link-info img{
+.main-info img{
 max-height: 200px;
 }
 
@@ -170,7 +170,7 @@ max-height: 200px;
 all 3 of the sections within the <aside> block all had unique
 class names but contained the same CSS code. They have been
 consolidated into one .side-info selector with the same code.*/
-.side-info {
+.aside-info {
     margin-bottom: 32px;
     color: #ffffff;
 }
@@ -180,7 +180,7 @@ All of the img CSS for this section also had unique class names but
 contained the same CSS code. Because the sections now all have the same 
 class designation, img is added (.side-info img) with the original CSS code."
 /* ".side-info" */
-.side-info img{
+.aside-info img{
     display: block;
     margin: 10px auto;
     max-width: 150px;
