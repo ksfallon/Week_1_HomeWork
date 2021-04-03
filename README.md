@@ -13,7 +13,9 @@
 ## Approach Style
 I took the webpage by section and decided to start writing each section from scratch. I had the current HTML on one screen and my new HTML on another so I wouldn't get off track. starting inside at the 'h1' and 'p' and building it out. I did the CSS slightly different. I copied the exact original CSS into my new style sheet, but only had the specific section that i was working on as active and visible. So everytime I renamed a section to a semantic element such as 'main' or 'aside' I would update that selector in my CSS but not change any other part of the code.
 
-## header section (from div)
+## Changes by section blocks
+
+### 1. Header section (from div)
 There was no need to change anything about the first few lines of code before the "header" section.
 The first big changes made were to improve the semantics of the top portion of the webpage which includes the name of the company/title of the website "Horiseon" and the clickable links.
 
@@ -32,9 +34,12 @@ It seemed logical to change the next 'div' block located within the header that 
  * I changed ".header div ul li" to "li" which makes the display:inline-block and margin-left:25px.
  * finally i combined the "ul" and the "li" under "li"
 
-I did not feel the need to change 'a' elements.
+I did not feel the need to change 'a' elements. And This is not there location of the broken link bug.
+Here is the new header block html:
 
-## aside section (from div)  
+![The header block of the original index.html](./assests/images/new-header.png)
+
+### 2. Aside section (from div)  
 I am working on the body of the website, skipping over the image of the meeting below the header/navigation bar.
 First I kept the current HTML but I made sure that the link for "search engine optimization" would work. this div section only has a class of "search-engine-optimization" and not an id with the same name where as the other two clickable links do, so I created the id="search-engine-optimization" that was missing.
 The first <div></div> for the left section of the page containing the link images and info i changed to <main></main>. i took out the <div class="content"> because now I can just use the Selector "main" in CSS
