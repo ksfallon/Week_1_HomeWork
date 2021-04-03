@@ -6,23 +6,35 @@
 ## Planning an Approach
 1. First I decided it was best to see how the webpage looked with the current HTML and CSS. I noticed that one link was not working, but otherise there weren't any bugs that I could see. It didn't make sense to necessarily try to fix the broken link in the HTML until I understood what I was dealing with.
 
-2. Next I decided to look over the layout of the HTML. When I noticed that the main element used to divide the sections of the webpage was '<div></div>' and that all had their own classes, '<div class="lots-of-classes">' that the CSS selectors were going to be more complicated than they needed to be.
+2. Next I decided to look over the layout of the HTML. When I noticed that the main element used to divide the sections of the webpage was 'div' and that all had their own classes, 'div class="lots-of-classes"', that the CSS selectors were going to be more complicated than they needed to be.
 
 3. Lastly I looked over the CSS. I thought about jumping in and changing the <div> elements, but that wouldn't make sense until I knew what the CSS selectors were and what the layout was like. I knew that other than the naming of the selectors, not much else was going to change in the CSS code. Yes, there would be redundant classes and lots of consolidating, but because the website page wasn't changing, neither would the code for font-size, background-color, margin, etc for the most part.
 
 ## Approach Style
-I took the webpage by section and decided to start writing each section from scratch. I had the current HTML on one screen and my new HTML on another so I wouldn't get off track. starting inside at the <h1> and <p> and building it out. I did the CSS slightly different. I copied the exact original CSS into my new style sheet, but only had the specific section that i was working on as active and visible. So everytime I made a section such as <main> or <aside> ETC I would update that selector in my CSS but not change any other part of the code.
+I took the webpage by section and decided to start writing each section from scratch. I had the current HTML on one screen and my new HTML on another so I wouldn't get off track. starting inside at the 'h1' and 'p' and building it out. I did the CSS slightly different. I copied the exact original CSS into my new style sheet, but only had the specific section that i was working on as active and visible. So everytime I renamed a section to a semantic element such as 'main' or 'aside' I would update that selector in my CSS but not change any other part of the code.
 
+## header section (from div)
+There was no need to change anything about the first few lines of code before the "header" section.
+The first big changes made were to improve the semantics of the top portion of the webpage which includes the name of the company/title of the website "Horiseon" and the clickable links.
 
-First big changes made were to improve the semantics of the top portion of the webpage which includes the name of the company/title of the website "Horiseon" and the clickable links "Search Engine Optimization", "Online Reputation Management", and "Social Media Marketing"
-The current web page was using <div></div> to seperate into sections and then using "class=" to connect to the CSS. I decided to get rid of the first <div></div> that contained the entire top portion of the website and instead put <header></header>. By doing this I no longer need a class called "header" I can just reference the <header></header> element in the CSS.
-I kept the <h1></h1> brakets around the title "Horiseon" because that clearly defines what it is, it is the first header line of the website. In the CSS is changed the ".header h1" to just "h1" because we no longer need to use the ".header" class.
-I have not changed the "span" part of <span class="seo">seo</span> that is within the header. I did change it to an id tho <span id="seo">seo</span> because it is so specific it makes more sense to make it an ID instead of class. The css then went from ".header h1 .seo" within CSS to just "#seo" to  designate that those letters need to be grey while the rest of the word is white. I haven't decided that I will change span to yet, but its definitely vague so I will find a better element to put there.
-Since I changed the first <div></div> to  <header></header> i decided that it made since to change the next <div></div> that contains the clickable links to <nav></nav> since it is in fact our navagation bar throughout the webpage. I did not see a reason to change the <ul></ul> and <li></li> brackets yet so I kept those the same. 
-Now I can change a couple more things in CSS. ".header div" became "nav" which designates the padding, margin, float, font-family and font-size of all the listed links.
-I changed ".header div ul" to "ul" which changes the list-style-type: none so there are no longer bullet points.
-and finally I changed ".header div ul li" to "li" which makes the display:inline-block and margin-left:25px.
-I did not feel the need to change <a></a> but I might see if i can combine <a></a> with either ul or li in CSS to make it more compact.
+![The header block of the original index.html](./assests/images/original-header.png)
+
+ I decided to get rid of the first 'div' block element that contained the entire top portion of the website and instead put 'header'. By doing this I no longer need a class called '.header' I can just reference the ''header' element in the CSS.
+
+I kept the 'h1' brakets around the title "Horiseon" because that clearly defines what it is, the first header line of the website. In the CSS is changed the ".header h1" to just "h1" because we no longer need to use the ".header" class.
+
+The letters "seo" within the Horiseon title are a different color. Because this is so unique it made sense to change the HTML coding. The original coding 'span class="seo">seo< span' and it seemed like it should be an id instead so I changed it to 'span id="seo">seo< span'. The css then went from ".header h1 .seo" within CSS to just "#seo" to  designate that those letters need to be grey while the rest of the word is white. I kept the span because even though someone might not know the semantics, it is used within text to specify a difference in code and makes the most sense.
+
+It seemed logical to change the next 'div' block located within the header that contains the clickable links to 'nav' since it is in fact the webpage's navagation bar. I did not see a reason to change the 'ul' and 'li'.
+ Now I can change a couple more things in CSS. 
+ * ".header div" became "nav" which designates the padding, margin, float, font-family and font-size of all the listed links.
+ * ".header div ul" to "ul". In this code the list-style-type: none so there are no longer bullet points.
+ * I changed ".header div ul li" to "li" which makes the display:inline-block and margin-left:25px.
+ * finally i combined the "ul" and the "li" under "li"
+
+I did not feel the need to change 'a' elements.
+
+## aside section (from div)  
 I am working on the body of the website, skipping over the image of the meeting below the header/navigation bar.
 First I kept the current HTML but I made sure that the link for "search engine optimization" would work. this div section only has a class of "search-engine-optimization" and not an id with the same name where as the other two clickable links do, so I created the id="search-engine-optimization" that was missing.
 The first <div></div> for the left section of the page containing the link images and info i changed to <main></main>. i took out the <div class="content"> because now I can just use the Selector "main" in CSS
@@ -38,3 +50,5 @@ same thing with the images reduced it from 3 selectors to 1, because i'd already
 For the footer I didn't feel the need to change much too much, just mainly the semantics.
 the <div class="footer"> just became <footer>. The CSS changed from ".footer" to "footer. the header just changed from ".footer h2" to "footer h2"
 I removed the additional files that might have confused the website link from git hub.
+
+![The Horiseon webpage includes a navigation bar, a header image, and cards with text and images at the bottom of the page.](./Assets/01-html-css-git-homework-demo.png)
