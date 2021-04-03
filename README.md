@@ -39,34 +39,45 @@ Here is the new header block html:
 
 ![The header block of the original index.html](./assests/images/new-header.png)
 
-### 2. Aside section (from div)  
+### 2. Main section (from div)  
 I am working on the body of the website, skipping over the image of the meeting below the header/navigation bar.
-First I kept the current HTML but I made sure that the link for "search engine optimization" would work. this div section only has a class of "search-engine-optimization" and not an id with the same name where as the other two clickable links do, so I created the id="search-engine-optimization" that was missing.
+
+* First I kept the current HTML but I made sure that the link for "search engine optimization" would work. This div section only has a class of "search-engine-optimization" and not an id with the same name where as the other two clickable links do, so I created the id="search-engine-optimization" that was missing.
 
 ![The header block of the original index.html](./assests/images/original-main.png)
 
-The first <div></div> for the left section of the page containing the link images and info i changed to <main></main>. i took out the <div class="content"> because now I can just use the Selector "main" in CSS
-Then for each <div></div> that created the three sections that contained the 3 link pics, title and details i called <section><section>. Within the <section> element I kept the unique id="" tags that connected the link from the navigation bar. 
-In the original CSS all of the now <sections> had individual classes, that went to separate Selectors in CSS which all had the same CSS code. So I gave all the sections the same class <section class="link-info"> to significantly reduce the line of CSS code. I didn't change any of the CSS code, just now instead of 3 different selectors in CSS giving the same information I have one selector called .link-info providing the: margin-bottom, padding, height, font-family, background-color, and color(font) for all 3 sections.
-Within each section is an "img" with a link to an image on file and a class specifying whether the image will "float-left" or "float-right". The first and last section img's float left and the second image floats right. The original CSS has ".float-left" twice with the same  "float:left;" and "margin-right: 25px;" perameters. I kept the class names the same in the HTML and CSS but removed the second and redundant float-left selector in the CSS.
-the images (img) for all of the sections also have the same information in CSS but under 3 different selectors. I combined them all into the ".link info img" selector since they all had the same padding, clear, font-family, and text-align perameters.
+* The first 'div' for the left section of the page containing the link images and info I changed to 'main'. I took out the 'div class="content"' because now I can just use the Selector "main" in CSS
+* For each 'div' that created the three sections that contained the 3 links, images, title and details I called 'section. Within the 'section' element I kept the unique id="" tags that connected the link from the navigation bar. 
+* In the original CSS all of the now 'sections' had individual classes, that went to separate Selectors in CSS. All of them had the same CSS code. So, I gave all the sections the same class 'class="main-info"' to significantly reduce the line of CSS code. I didn't change any of the CSS code within the selectors, but now instead of 3 different selectors in CSS giving the same information I have one selector called .link-info providing the: margin-bottom, padding, height, font-family, background-color, and color(font) for all 3 sections.
+
+* Within each section is an "img" with a link to an image on file and a class specifying whether the image will "float-left" or "float-right". The first and last section img's float left and the second image floats right. The original CSS has ".float-left" twice with the same  "float:left;" and "margin-right: 25px;" perameters. I kept the class names the same in the HTML and CSS but removed the second and redundant float-left selector in the CSS.
+
+* The images (img) for all of the sections also have the same information in CSS but under 3 different selectors. I combined them all into the ".main-info img" selector since they all had the same padding, clear, font-family, and text-align perameters.
+* Here is the updated HTML:
 
 ![The header block of the original index.html](./assests/images/new-main.png)
 
-THe section that is located on the right side of the webpage i changed its main <div></div> element to <aside></aside>. i got rid of the class "benefits" and just used asie as the selector in CSS.
+### 3. Aside section (from div) 
+The section that is located on the right side of the webpage I changed its 'div' element to 'aside'. I got rid of the class "benefits" and just used 'aside' as the selector in CSS.
 
 ![The header block of the original index.html](./assests/images/original-aside.png)
 
-very similar to the <main></main> the <aside></aside> has redundant "class" tags in HTML and additional Selectors in CSS.
-I renamed all of the divs to <section></section> again to show the 3 sections of the aside with their individual images, text and titles. Each section has the same class of "side-info" which was then put into CSS and took the old "benefit.___" class which were 3 different names with all the same CSS and reduced it to one ".side-info" selector.
-Samething with the headers, there were 3 different "h3" selectors put in with the same information so I shortened it to just h3 and it applied to all "h3"s used.
-same thing with the images reduced it from 3 selectors to 1, because i'd already give all of their selectors the same class so ".info-side img" worked for all of them.
+* Very similar to the 'main' block, the 'aside' block has redundant "class" tags in HTML and additional Selectors in CSS.
+* I renamed all of the divs to 'section' again to show the 3 sections of the aside with their individual images, text and titles. 
+* Each section has a different class which started with "benefit-" and again all have the same CSS code. I reduced it to one class of ".aside-info" selector and consolidated into one selector in CSS.
+* Same thing with the headers, there were 3 different "h3" selectors put in with the same information. I got rid of the class and just used 'h3' in the CSS to consolidate again to one selector.
+* Same thing again with the images. I reduced it from 3 selectors to 1, because I'd already give all of their selectors the same class, it became ".aside-info" img" in CSS.
+* Here is the HTML:
 
 ![The header block of the original index.html](./assests/images/new-aside.png)
 
+### 4. Footer section (from div)
 For the footer I didn't feel the need to change much too much, just mainly the semantics.
 ![The header block of the original index.html](./assests/images/original-footer.png)
-the <div class="footer"> just became <footer>. The CSS changed from ".footer" to "footer. the header just changed from ".footer h2" to "footer h2"
+
+* The 'div class="footer"' just became 'footer'. 
+* The CSS changed from ".footer" to "footer. 
+* the header just changed from ".footer h2" to "footer h2"
 ![The header block of the original index.html](./assests/images/new-footer.png)
 
 
