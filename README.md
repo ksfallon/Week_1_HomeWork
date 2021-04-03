@@ -1,5 +1,19 @@
-# Week_1_HomeWork
-Week 1's homework is to improve a current company's website without actually changing the website. It is Due April 3 at 11:59pm
+#  Week 1 HomeWork
+
+## Assignment Details
+* Our first homework assignment is to help a company improve their HTML and CSS so it follows accessibility standards. The webpage should not actually change but the code needs to have semantic elements that provide a more logical flow to the code. We also need to create a GitHub repository for the assignment, git add . changes as we alter the code and create a GitHub page with a link to the website. It is Due April 3 at 11:59pm.
+
+## Planning an Approach
+1. First I decided it was best to see how the webpage looked with the current HTML and CSS. I noticed that one link was not working, but otherise there weren't any bugs that I could see. It didn't make sense to necessarily try to fix the broken link in the HTML until I understood what I was dealing with.
+
+2. Next I decided to look over the layout of the HTML. When I noticed that the main element used to divide the sections of the webpage was '<div></div>' and that all had their own classes, '<div class="lots-of-classes">' that the CSS selectors were going to be more complicated than they needed to be.
+
+3. Lastly I looked over the CSS. I thought about jumping in and changing the <div> elements, but that wouldn't make sense until I knew what the CSS selectors were and what the layout was like. I knew that other than the naming of the selectors, not much else was going to change in the CSS code. Yes, there would be redundant classes and lots of consolidating, but because the website page wasn't changing, neither would the code for font-size, background-color, margin, etc for the most part.
+
+## Approach Style
+I took the webpage by section and decided to start writing each section from scratch. I had the current HTML on one screen and my new HTML on another so I wouldn't get off track. starting inside at the <h1> and <p> and building it out. I did the CSS slightly different. I copied the exact original CSS into my new style sheet, but only had the specific section that i was working on as active and visible. So everytime I made a section such as <main> or <aside> ETC I would update that selector in my CSS but not change any other part of the code.
+
+
 First big changes made were to improve the semantics of the top portion of the webpage which includes the name of the company/title of the website "Horiseon" and the clickable links "Search Engine Optimization", "Online Reputation Management", and "Social Media Marketing"
 The current web page was using <div></div> to seperate into sections and then using "class=" to connect to the CSS. I decided to get rid of the first <div></div> that contained the entire top portion of the website and instead put <header></header>. By doing this I no longer need a class called "header" I can just reference the <header></header> element in the CSS.
 I kept the <h1></h1> brakets around the title "Horiseon" because that clearly defines what it is, it is the first header line of the website. In the CSS is changed the ".header h1" to just "h1" because we no longer need to use the ".header" class.
